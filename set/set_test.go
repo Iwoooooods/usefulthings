@@ -15,7 +15,7 @@ func Test(t *testing.T) {
 		t.Errorf("Not expected set to contain 1")
 	}
 	s = NewSet(1, 2, 3, 2, 1)
-	if s.Size() != 3 {
+	if len(s.elements) != 3 {
 		t.Errorf("Expected set to have size 3")
 	}
 }
